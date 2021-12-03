@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
+import MyHeader from "./components/MyHeader";
+import MyMain from "./components/MyMain";
+import MyFooter from "./components/MyFooter";
 
 class App extends Component {
     render() {
         return (
             <div>
-                hello...
+                <MyHeader/>
+                <MyMain/>
+                <MyFooter/>
             </div>
         );
     }

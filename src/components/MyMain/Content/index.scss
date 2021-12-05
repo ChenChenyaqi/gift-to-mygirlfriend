@@ -1,0 +1,76 @@
+$content-height: 3rem;
+$content-width: 85vw;
+
+.music-switch {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 999;
+}
+
+.my-content {
+  position: relative;
+  opacity: 1;
+  font-size: 1.4rem;
+  line-height: $content-height;
+  text-align: center;
+  width: $content-width;
+  overflow: hidden;
+  //animation: show-content 5s;
+  //animation-iteration-count: infinite;
+  /* 圆形 */
+  div {
+    background-color: rgb(27, 28, 24);
+    color: #ff5bcc;
+  }
+
+  .banzi {
+    position: absolute;
+    z-index: 9;
+    width: $content-width;
+    height: $content-height;
+  }
+
+  .down-arrow {
+    color: #9b6cff;
+    z-index: 99;
+    font-size: 2rem;
+    i{
+      display: block;
+      animation: move-arrow 3s;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+
+@keyframes show-content {
+  0% {
+    left: 0
+  }
+  100% {
+    left: $content-width
+  }
+}
+
+@keyframes rotate-music {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes move-arrow {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0.5rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}

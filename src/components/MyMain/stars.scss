@@ -1,0 +1,23 @@
+.stars {
+  overflow: hidden;
+  position: relative;
+  background: radial-gradient(100% 100% at center center, #021, #000);
+}
+
+@keyframes flashing {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+  }
+}

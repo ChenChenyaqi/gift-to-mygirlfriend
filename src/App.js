@@ -1,18 +1,16 @@
-import React, {Component} from 'react';
-import MyHeader from "./components/MyHeader";
+import React from 'react';
 import MyMain from "./components/MyMain";
-import MyFooter from "./components/MyFooter";
+import "./App.css"
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <MyHeader/>
-                <MyMain/>
-                <MyFooter/>
-            </div>
-        );
-    }
+const App = () => {
+
+    const appHeight = document.documentElement.clientHeight
+
+    return (
+        <div className="app" style={{height:`${appHeight}px`}}>
+            <MyMain/>
+        </div>
+    );
 }
 
 export default App;

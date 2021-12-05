@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.music-switch {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 999; }
+
+.my-content {
+  position: relative;
+  opacity: 1;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 85vw;
+  overflow: hidden;
+  /* 圆形 */ }
+  .my-content div {
+    background-color: #1b1c18;
+    color: #ff5bcc; }
+  .my-content .banzi {
+    position: absolute;
+    z-index: 9;
+    width: 85vw;
+    height: 3rem; }
+  .my-content .down-arrow {
+    color: #9b6cff;
+    z-index: 99;
+    font-size: 2rem; }
+    .my-content .down-arrow i {
+      display: block;
+      animation: move-arrow 3s;
+      animation-iteration-count: infinite; }
+
+@keyframes show-content {
+  0% {
+    left: 0; }
+  100% {
+    left: 85vw; } }
+@keyframes rotate-music {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes move-arrow {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(0.5rem); }
+  100% {
+    transform: translateY(0rem); } }
+
+/*# sourceMappingURL=index.css.map */

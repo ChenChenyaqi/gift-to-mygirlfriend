@@ -23,11 +23,12 @@
     width: 85vw;
     height: 3rem; }
   .my-content .down-arrow {
-    color: #9b6cff;
-    z-index: 99;
-    font-size: 2rem; }
+    z-index: 99; }
     .my-content .down-arrow i {
+      color: #9b6cff;
+      font-size: 2vw;
       display: block;
+      font-weight: bold;
       animation: move-arrow 3s;
       animation-iteration-count: infinite; }
 

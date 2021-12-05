@@ -1,6 +1,6 @@
 import React from 'react';
 import "./index.css"
-import firework from  "./fireworks"
+import firework from "./fireworks"
 import "./fireworks.css"
 
 const allContent = [
@@ -182,7 +182,7 @@ const Content = () => {
     const nextPage = () => {
         setContent(() => {
             if (contentIndex === allContent.length) {
-                setTimeout(()=>{
+                setTimeout(() => {
                     firework()
                 }, 100)
                 return null
@@ -248,7 +248,9 @@ const Content = () => {
                     }) : <canvas/>
                 }
                 <div className="down-arrow" onClick={nextPage} style={{display: content ? "" : "none"}}>
-                    <i className="iconfont icon-downarrow"/>
+                    <div className="i">
+                        <i className="iconfont icon-downarrow"/>
+                    </div>
                 </div>
             </div>
         </div>

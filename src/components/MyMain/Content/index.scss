@@ -32,11 +32,12 @@ $content-width: 85vw;
   }
 
   .down-arrow {
-    color: #9b6cff;
     z-index: 99;
-    font-size: 2rem;
-    i{
+    i {
+      color: #9b6cff;
+      font-size: 2vw;
       display: block;
+      font-weight: bold;
       animation: move-arrow 3s;
       animation-iteration-count: infinite;
     }

@@ -1,5 +1,7 @@
 import React from 'react';
 import "./index.css"
+import firework from  "./fireworks"
+import "./fireworks.css"
 
 const allContent = [
     [
@@ -60,7 +62,7 @@ const allContent = [
         "你在前面给表演的人拍照",
         "然后你扭头对我笑了笑",
         "我瞬间有一股错觉",
-        "我们是不是已经在一起很久了的情侣呀",
+        "我们好像是已经在一起很久了的情侣呀",
     ],
     [
         "夜晚的大雁塔很美",
@@ -141,8 +143,9 @@ const allContent = [
     ],
     [
         "现在",
-        "2021年的最后一天",
-        "我请你一起看烟花！"
+        "2021年的最后一刻",
+        "我请你一起看烟花！",
+        "2022新年快乐！"
     ]
 
 ]
@@ -178,8 +181,11 @@ const Content = () => {
 
     const nextPage = () => {
         setContent(() => {
-            if (contentIndex + 1 === allContent.length) {
-                return allContent[contentIndex]
+            if (contentIndex === allContent.length) {
+                setTimeout(()=>{
+                    firework()
+                }, 100)
+                return null
             }
             setContentIndex(contentIndex + 1)
             return allContent[contentIndex]
@@ -224,12 +230,12 @@ const Content = () => {
             </audio>
             <div key={Math.random()} className="my-content" style={{visibility: show}}>
                 {
-                    content.map((item, index) => {
+                    content ? content.map((item, index) => {
                         return <div key={index}>{item}</div>
-                    })
+                    }) : null
                 }
                 {
-                    banziNum.map((item, index) => {
+                    content ? banziNum.map((item, index) => {
                         return <div key={index + "s"}
                                     className="banzi"
                                     style={{
@@ -239,9 +245,9 @@ const Content = () => {
                                         animationDelay: `${index * duringTime}s`,
                                         animationTimingFunction: "cubic-bezier(0.1,0.15,0.1,0.15)"
                                     }}/>
-                    })
+                    }) : <canvas/>
                 }
-                <div className="down-arrow" onClick={nextPage}>
+                <div className="down-arrow" onClick={nextPage} style={{display: content ? "" : "none"}}>
                     <i className="iconfont icon-downarrow"/>
                 </div>
             </div>

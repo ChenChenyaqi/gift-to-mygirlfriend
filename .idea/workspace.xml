@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b6305f8-219a-410f-b613-903c5d920866" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bgm/汪苏泷,By2 - 有点甜.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bgm/花粥 - 纸短情长.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyMain/.sass-cache/0c27550861d162162133fea1496cb9fc1ab72a82/index.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyMain/.sass-cache/0c27550861d162162133fea1496cb9fc1ab72a82/stars.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyMain/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyMain/stars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MyMain/Content/fireworks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MyMain/Content/fireworks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyFooter/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyHeader/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +61,16 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -84,6 +81,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -99,7 +101,8 @@
       <workItem from="1638532016865" duration="11095000" />
       <workItem from="1638609181002" duration="5019000" />
       <workItem from="1638617215515" duration="12241000" />
-      <workItem from="1638663214839" duration="23200000" />
+      <workItem from="1638663214839" duration="29676000" />
+      <workItem from="1638697199674" duration="727000" />
     </task>
     <task id="LOCAL-00001" summary="初始化...">
       <created>1638431818176</created>
@@ -129,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638533051311</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="版本0.0.1">
+      <created>1638688143724</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638688143724</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +161,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="初始化..." />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化..." />
+    <MESSAGE value="版本0.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="版本0.0.1" />
   </component>
 </project>

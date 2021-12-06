@@ -7,30 +7,41 @@
 
 .my-content {
   position: relative;
-  opacity: 1;
+  display: flex;
+  flex-direction: column;
   font-size: 1.4rem;
   line-height: 3rem;
   text-align: center;
   width: 85vw;
   overflow: hidden;
+  animation: flow-out 1s;
+  animation-fill-mode: forwards;
   /* 圆形 */ }
   .my-content div {
     background-color: #1b1c18;
     color: #ff5bcc; }
+  .my-content div:hover {
+    color: #afa8ff; }
   .my-content .banzi {
     position: absolute;
     z-index: 9;
     width: 85vw;
     height: 3rem; }
   .my-content .down-arrow {
-    z-index: 99; }
+    z-index: 99;
+    position: relative;
+    align-self: center;
+    width: 2rem;
+    background-color: rgba(207, 193, 255, 0); }
     .my-content .down-arrow i {
       color: #9b6cff;
-      font-size: 2vw;
+      font-size: 1.5rem;
       display: block;
       font-weight: bold;
       animation: move-arrow 3s;
       animation-iteration-count: infinite; }
+  .my-content .down-arrow:hover i {
+    color: #afa8ff; }
 
 @keyframes show-content {
   0% {
@@ -49,5 +60,10 @@
     transform: translateY(0.5rem); }
   100% {
     transform: translateY(0rem); } }
+@keyframes flow-out {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=index.css.map */

@@ -12,25 +12,25 @@ const allContent = [
     ],
     [
         "当时你临近高考",
-        "只有晚上才能找我一下",
+        "只有晚上才能偶尔跟我聊会儿天",
         "我也不知道从何时开始喜欢上你",
-        "大概是那次",
+        "大概是那次...",
         "你想睡觉的时候听历史笔记",
-        "我抽出一下午的时间",
-        "给你念、录好音"
+        "我便抽出一下午的时间",
+        "给你念、录好音",
     ],
     [
         "还记得有一次",
         "你突然让我读一下‘nanami’",
-        "你还截屏保存了，录下了我的声音",
+        "你还录屏保存，录下了我的声音",
         "后来我才知道",
-        "这是一部动漫里女主的名字啊",
+        "原来这是一部动漫里女主的名字啊",
         "所以...你当时在暗示我",
-        "我是你的巴卫，你是我的奈奈生"
+        "我是你的巴卫，你是我的奈奈生！"
     ],
     [
-        "后来啊，你高考结束啦",
-        "当时我们约定，等你报完志愿",
+        "再后来，你高考结束啦",
+        "我们当时约定，等你报完志愿",
         "我们就面基...",
     ],
     [
@@ -42,8 +42,8 @@ const allContent = [
     ],
     [
         "终于...",
-        "你身穿蓝色的洛丽塔裙子，惊艳了我",
-        "心跳加速的我却在见到你后平静了下来",
+        "你身穿蓝色的裙子，惊艳了我",
+        "心跳加速的我却在见到你后平静下来",
         "之后的每次见面",
         "我都是见你之前很紧张，到处找你",
         "见到你后，却立马变得很惬意、放松",
@@ -62,15 +62,17 @@ const allContent = [
         "你在前面给表演的人拍照",
         "然后你扭头对我笑了笑",
         "我瞬间有一股错觉",
-        "我们好像是已经在一起很久了的情侣呀",
+        "我们像是已经在一起很久了的情侣呀",
     ],
     [
         "夜晚的大雁塔很美",
         "我们走在回去的路上",
+        "也许是时候了...",
         "我突然牵住你的手",
-        "你好像低头笑了下，又好像没有",
+        "你好像害羞的笑了下，又好像没有",
         "我对你说：做我女朋友吧！",
-        "你：嗯！"
+        "你：嗯！",
+        "..."
     ],
     [
         "没想到，我们俩走着走着就成为了情侣",
@@ -115,22 +117,22 @@ const allContent = [
         "但也因为疫情被迫取消",
         "还记得去年的冬天，我坐高铁去找你",
         "结果一下高铁就被拦住去做核酸",
-        "当时好怕被隔离起来，见不到你",
+        "当时我好害怕被隔离起来，见不到你",
     ],
     [
         "你说你经常在校园里看到一对对情侣",
-        "你好羡慕他们，我何尝不是",
+        "你好羡慕他们，我何尝不是呢？",
         "异地恋的我们，宛如单身一样",
         "遇到一些事情，只能自己去解决",
         "我不在你身边，我帮不了你",
     ],
     [
         "记得上个月，你说下雨了，你回不去学校",
-        "我不能说我去接你，因为我做不到...",
+        "但我不能说我去接你，因为我做不到...",
         "我能感受到你在抱怨...",
         "我当时说:",
         "会有那么一天",
-        "下雨了，我开车去你公司接你回家",
+        "下雨了，我开车去你公司接你回家！",
     ],
     [
         "我憧憬着我们的未来",
@@ -145,9 +147,8 @@ const allContent = [
         "现在",
         "2021年的最后一刻",
         "我请你一起看烟花！",
-        "2022新年快乐！"
+        "2022新年快乐！！！"
     ]
-
 ]
 
 const musicList = [
@@ -155,52 +156,79 @@ const musicList = [
     "/bgm/花粥 - 纸短情长.mp3"
 ]
 
+
 const Content = () => {
 
     // 文字出现时间
     const duringTime = 3
 
-    const [content, setContent] = React.useState([])
-    const [show, setShow] = React.useState("hidden")
+    // 显示的内容
+    const [content, setContent] = React.useState(allContent[0])
+    // 是否显示my-content
+    const [show, setShow] = React.useState("none")
+    // 音乐是否播放动画效果
     const [rotateMusic, setRotateMusic] = React.useState(false)
-    const [banziNum, setBanZiNum] = React.useState(Array.from({length: 20}, () => 1))
+    // allContents的索引下标
     const [contentIndex, setContentIndex] = React.useState(0)
 
-    const startMusic = () => {
+
+    // 播放暂停音乐
+    const switchMusic = () => {
         let music = document.getElementById("music");
+        // 暂停音乐
         if (rotateMusic) {
             setRotateMusic(false)
             music.pause()
             return
         }
+        // 播放音乐
         setRotateMusic(true)
         music.play()
         music.volume = 0.8
+        // 初始时，显示my-content
         setShow("")
     }
 
+    // 点击下一页
     const nextPage = () => {
+        // 更新下一页显示的内容
         setContent(() => {
+            // 如果显示到头了
+            // 播放烟花特效
             if (contentIndex === allContent.length) {
+                // 100毫秒后播放
                 setTimeout(() => {
                     firework()
                 }, 100)
                 return null
             }
+            // 内容索引自增
             setContentIndex(contentIndex + 1)
+            // 返回下一个内容
+            // 虽放在setContentIndex下面，但setContentIndex是异步方法，所以不影响此刻contentIndex的值
             return allContent[contentIndex]
         })
     }
 
     React.useEffect(() => {
-        setContent(() => {
-            setContentIndex(contentIndex + 1)
-            return allContent[contentIndex]
-        })
+
+        // 音乐列表索引
+        sessionStorage.setItem("musicIndex", "0")
+
+        // 监测一首歌是否播放完毕
         let time = setInterval(() => {
             let music = document.getElementById("music");
             if (music.currentTime >= music.duration) {
-                music.src = musicList[1];
+                // 获取索引
+                let i = parseInt(sessionStorage.getItem("musicIndex"))
+                // 如果索引到头，从头开始
+                if (i === musicList.length) {
+                    i = 0
+                }
+                music.src = musicList[i];
+                i++
+                // 跟新索引
+                sessionStorage.setItem("musicIndex", i + "")
                 music.play()
                 music.volume = 0.8
             }
@@ -212,7 +240,7 @@ const Content = () => {
 
     return (
         <div>
-            <div onClick={startMusic} className="music-switch">
+            <div onClick={switchMusic} className="music-switch">
                 <i className="iconfont icon-yinle"
                    style={{
                        color: "red",
@@ -228,14 +256,14 @@ const Content = () => {
             <audio id="music">
                 <source src={musicList[0]} type="audio/mpeg"/>
             </audio>
-            <div key={Math.random()} className="my-content" style={{visibility: show}}>
+            <div key={content} className="my-content" style={{display: show}}>
                 {
                     content ? content.map((item, index) => {
                         return <div key={index}>{item}</div>
                     }) : null
                 }
                 {
-                    content ? banziNum.map((item, index) => {
+                    content ? content.map((item, index) => {
                         return <div key={index + "s"}
                                     className="banzi"
                                     style={{
@@ -248,9 +276,7 @@ const Content = () => {
                     }) : <canvas/>
                 }
                 <div className="down-arrow" onClick={nextPage} style={{display: content ? "" : "none"}}>
-                    <div className="i">
-                        <i className="iconfont icon-downarrow"/>
-                    </div>
+                    <i className="iconfont icon-downarrow"/>
                 </div>
             </div>
         </div>

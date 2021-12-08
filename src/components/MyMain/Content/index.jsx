@@ -3,6 +3,10 @@ import "./index.css"
 import firework from "./fireworks"
 import "./fireworks.css"
 
+import upLetterPath from "./letter-imgs/before.png"
+import downLetterPath from "./letter-imgs/after.png"
+import letterPath from "./letter-imgs/letter_bg.png"
+
 const allContent = [
     [
         "我们的故事从2020年开始...",
@@ -174,7 +178,10 @@ const Content = () => {
     const [rotateMusic, setRotateMusic] = React.useState(false)
     // allContents的索引下标
     const [contentIndex, setContentIndex] = React.useState(0)
-
+    // 显示canvas
+    const [showCanvas, setShowCanvas] = React.useState("unshow")
+    // 显示信封
+    const [showLetter, setShowLetter] = React.useState("")
 
     // 播放暂停音乐
     const switchMusic = () => {
@@ -210,17 +217,20 @@ const Content = () => {
             setContentIndex(contentIndex + 1)
             // 返回下一个内容
             // 虽放在setContentIndex下面，但setContentIndex是异步方法，所以不影响此刻contentIndex的值
-            return allContent[contentIndex+1]
+            return allContent[contentIndex + 1]
         })
     }
 
-    React.useEffect(() => {
-
+    const start = () => {
+        setShowLetter("none")
         // 初始时，显示my-content
         setShow("")
-
+        setShowCanvas("show")
         // 初始化播放音乐
         switchMusic()
+    }
+
+    React.useEffect(() => {
 
         // 音乐列表索引
         sessionStorage.setItem("musicIndex", "0")
@@ -249,7 +259,7 @@ const Content = () => {
     }, [])
 
     return (
-        <div>
+        <div style={{display: "flex", alignItems: "center"}}>
             <div onClick={switchMusic} className="music-switch">
                 <i className="iconfont icon-yinle"
                    style={{
@@ -265,6 +275,31 @@ const Content = () => {
             <audio id="music">
                 <source src={musicList[0]} type="audio/mpeg"/>
             </audio>
+
+            {/*开始的信封*/}
+            <div onClick={start} className="start" style={{display: showLetter}}>
+                <div className="up-letter">
+                    <img src={upLetterPath} alt="信封"/>
+                </div>
+                <div className="letter-wrapper">
+                    <div className="letter" style={{
+                        animation: "letter-move-up 3s",
+                        animationFillMode: "forwards",
+                    }}>
+                        <img src={letterPath} alt="信纸"/>
+                        <div className="letter-content">
+                            <span>赠予我的小宝贝</span>
+                            <div className="open-letter">
+                                <i className="iconfont icon-aixin"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="down-letter">
+                        <img src={downLetterPath} alt="信封"/>
+                    </div>
+                </div>
+            </div>
+
             <div key={content} className="my-content" style={{display: show}}>
                 {
                     content ? content.map((item, index) => {
@@ -291,7 +326,7 @@ const Content = () => {
             </div>
             <div>
                 {
-                    show === "none" ?
+                    show === "none" && showCanvas === "show" ?
                         <canvas width={document.documentElement.clientWidth}
                                 height={document.documentElement.clientHeight}/>
                         : null

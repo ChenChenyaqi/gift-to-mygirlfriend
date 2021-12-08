@@ -1,17 +1,71 @@
 $content-height: 3rem;
 $content-width: 85vw;
 
+// 音乐播放
 .music-switch {
   position: absolute;
   right: 1rem;
   top: 1rem;
   z-index: 999;
   color: red;
-  :hover{
+
+  :hover {
     color: #ff4c4a;
   }
 }
 
+// 信封
+.start {
+  position: relative;
+
+  .up-letter img, .down-letter img {
+    width: 15rem;
+  }
+
+  .up-letter {
+    top: -5rem;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .letter-wrapper {
+    position: relative;
+
+    .down-letter {
+      position: relative;
+      z-index: 2;
+    }
+
+    .letter {
+      position: absolute;
+      z-index: 2;
+      left: 0.25rem;
+
+      img {
+        width: 14.5rem;
+        height: 7rem;
+      }
+
+      .letter-content {
+        position: relative;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        top: -7rem;
+        .open-letter{
+          margin-top: 1.6rem;
+          i{
+            color: #ff1b4e;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+// 主内容区
 .my-content {
   position: relative;
   display: flex;
@@ -29,10 +83,11 @@ $content-width: 85vw;
     color: #ff5bcc;
   }
 
-  div:hover{
+  div:hover {
     color: #afa8ff;
   }
 
+  // 遮板
   .banzi {
     position: absolute;
     z-index: 9;
@@ -40,12 +95,13 @@ $content-width: 85vw;
     height: $content-height;
   }
 
+  // 翻页键
   .down-arrow {
     z-index: 99;
     position: relative;
     align-self: center;
     width: 2rem;
-    background-color: rgba(207,193,255,0);
+    background-color: rgba(207, 193, 255, 0);
 
     i {
       color: #9b6cff;
@@ -57,8 +113,8 @@ $content-width: 85vw;
     }
   }
 
-  .down-arrow:hover{
-    i{
+  .down-arrow:hover {
+    i {
       color: #afa8ff;
     }
   }
@@ -97,11 +153,20 @@ $content-width: 85vw;
 }
 
 @keyframes flow-out {
-  0%{
+  0% {
     opacity: 0;
   }
 
-  100%{
+  100% {
     opacity: 1;
+  }
+}
+
+@keyframes letter-move-up {
+  0% {
+    top: -0rem;
+  }
+  100% {
+    top: -3rem;
   }
 }

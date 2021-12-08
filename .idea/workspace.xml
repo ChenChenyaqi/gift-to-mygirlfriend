@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b6305f8-219a-410f-b613-903c5d920866" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +107,7 @@
       <workItem from="1638871433923" duration="1169000" />
       <workItem from="1638881733572" duration="5422000" />
       <workItem from="1638940079380" duration="601000" />
-      <workItem from="1638945772556" duration="3339000" />
+      <workItem from="1638945772556" duration="4506000" />
     </task>
     <task id="LOCAL-00001" summary="初始化...">
       <created>1638431818176</created>
@@ -174,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638948996918</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="版本0.0.6">
+      <created>1638949240350</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1638949240350</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +206,7 @@
     <MESSAGE value="版本0.0.3" />
     <MESSAGE value="版本0.0.4" />
     <MESSAGE value="版本0.0.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="版本0.0.5" />
+    <MESSAGE value="版本0.0.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="版本0.0.6" />
   </component>
 </project>

@@ -181,7 +181,7 @@ const Content = () => {
     // 显示canvas
     const [showCanvas, setShowCanvas] = React.useState("unshow")
     // 显示信封
-    const [showLetter, setShowLetter] = React.useState("")
+    const [showLetter, setShowLetter] = React.useState("none")
 
     // 播放暂停音乐
     const switchMusic = () => {
@@ -212,7 +212,6 @@ const Content = () => {
                 setShow("none")
                 return null
             }
-            console.log("123")
             // 内容索引自增
             setContentIndex(contentIndex + 1)
             // 返回下一个内容
@@ -235,6 +234,10 @@ const Content = () => {
         // 音乐列表索引
         sessionStorage.setItem("musicIndex", "0")
 
+        setTimeout(()=>{
+            setShowLetter("")
+        }, 600)
+
         // 监测一首歌是否播放完毕
         let time = setInterval(() => {
             let music = document.getElementById("music");
@@ -242,11 +245,11 @@ const Content = () => {
                 // 获取索引
                 let i = parseInt(sessionStorage.getItem("musicIndex"))
                 // 如果索引到头，从头开始
+                i++
                 if (i === musicList.length) {
                     i = 0
                 }
                 music.src = musicList[i];
-                i++
                 // 跟新索引
                 sessionStorage.setItem("musicIndex", i + "")
                 music.play()

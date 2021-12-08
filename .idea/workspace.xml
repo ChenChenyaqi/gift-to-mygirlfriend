@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b6305f8-219a-410f-b613-903c5d920866" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/MyMain/Content/letter-imgs/after.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyMain/Content/letter-imgs/before.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyMain/Content/letter-imgs/letter_bg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.css.map" afterDir="false" />
@@ -115,7 +111,7 @@
       <workItem from="1638871433923" duration="1169000" />
       <workItem from="1638881733572" duration="5422000" />
       <workItem from="1638940079380" duration="601000" />
-      <workItem from="1638945772556" duration="13044000" />
+      <workItem from="1638945772556" duration="15232000" />
     </task>
     <task id="LOCAL-00001" summary="初始化...">
       <created>1638431818176</created>
@@ -194,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638950382378</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="版本1.0">
+      <created>1638964132268</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1638964132268</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +226,7 @@
     <MESSAGE value="版本0.0.5" />
     <MESSAGE value="版本0.0.6" />
     <MESSAGE value="版本0.0.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="版本0.0.7" />
+    <MESSAGE value="版本1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="版本1.0" />
   </component>
 </project>

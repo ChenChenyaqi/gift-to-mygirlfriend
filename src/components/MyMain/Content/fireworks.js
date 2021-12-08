@@ -1,39 +1,44 @@
-export default function firework() {
-    var ctx = document.querySelector('canvas').getContext('2d')
-    ctx.canvas.width = document.documentElement.clientWidth
-    ctx.canvas.height = document.documentElement.clientHeight
-
-    var sparks = []
-    var fireworks = []
-    var i = 20;
-    while (i--) {
-        fireworks.push(
-            new Firework(Math.random() * document.documentElement.clientHeight, document.documentElement.clientWidth * Math.random())
-        )
-    }
-
+export default () => {
+    // 获取画笔
+    const ctx = document.querySelector('canvas').getContext('2d')
+    // 火花
+    const sparks = []
+    // 烟花
+    const fireworks = []
+    // 渲染烟花
     render()
 
+    // =========================================================================================================
+
+    // 渲染
     function render() {
-        setTimeout(render, 1000 / 60)
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+        // 每1/60秒渲染一次， 播放动画
+        setTimeout(render, 1000 / 50)
+        // 填充颜色
+        ctx.save()
+        ctx.fillStyle = 'rgba(0,0,0,0.1)';
+        // 绘制填充矩形
         ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height)
-        for (var firework of fireworks) {
+        // 遍历每一个烟花
+        for (const firework of fireworks) {
             if (firework.dead) continue
             firework.move()
             firework.draw()
         }
-        for (var spark of sparks) {
+        // 遍历每一个火花
+        for (const spark of sparks) {
             if (spark.dead) continue
             spark.move()
             spark.draw()
         }
 
-        if (Math.random() < 0.05) {
+        if (Math.random() < 0.1) {
             fireworks.push(new Firework())
         }
+        ctx.restore()
     }
 
+    // 火花
     function Spark(x, y, color) {
         this.x = x
         this.y = y
@@ -41,24 +46,25 @@ export default function firework() {
         this.dead = false
         this.color = color
         this.speed = Math.random() * 3 + 3;
-        this.walker = new Walker({radius: 20, speed: 0.25})
-        this.gravity = 0.25
-        this.dur = this.speed / 0.1
+        this.walker = new Walker({radius: 20, speed: 0.001})
+        this.gravity = 0.1
+        this.dur = this.speed / 0.075
         this.move = function () {
             this.dur--
             if (this.dur < 0) this.dead = true
 
             if (this.speed < 0) return
             if (this.speed > 0) this.speed -= 0.1
-            var walk = this.walker.step()
+            const walk = this.walker.step()
             this.x += Math.cos(this.dir + walk) * this.speed
             this.y += Math.sin(this.dir + walk) * this.speed
             this.y += this.gravity
-            this.gravity += 0.05
+            this.gravity += 0.025
 
         }
+        // 火花大小
         this.draw = function () {
-            drawCircle(this.x, this.y, 3, this.color)
+            drawCircle(this.x, this.y, (Math.random() + 1), this.color)
         }
     }
 
@@ -78,25 +84,47 @@ export default function firework() {
         this.draw = function () {
             drawCircle(this.x, this.y, 1, this.color)
         }
+        // 爆炸效果
         this.burst = function () {
             this.dead = true
-            var i = 100;
+            if (Math.random() < 0.05) {
+                let i = 2000;
+                while (i--) sparks.push(new Spark(this.x, this.y, randomColor()))
+                return
+            }
+            if (Math.random() < 0.3) {
+                let i = 500;
+                while (i--) sparks.push(new Spark(this.x, this.y, this.color))
+                return
+            }
+            if (Math.random() < 0.5) {
+                let i = 250;
+                while (i--) sparks.push(new Spark(this.x, this.y, this.color))
+                return
+            }
+
+            let i = 100;
             while (i--) sparks.push(new Spark(this.x, this.y, this.color))
         }
     }
 
+    // 画圈圈
     function drawCircle(x, y, radius, color) {
         color = color || '#FFF'
         ctx.fillStyle = color
         ctx.fillRect(x - radius / 2, y - radius / 2, radius, radius)
     }
 
+    //  随机颜色
     function randomColor() {
-        return ['#93c47d', '#a4c2f4', '#b4a7d6', '#c27ba0', '#f6b26b', '#ffd966'][Math.floor(Math.random() * 6)];
+        return ['yellow', '#1112ff', '#ff0cb8', '#ff1107', '#29f613', '#ffd966'][Math.floor(Math.random() * 6)];
     }
 
+    // 移动
     function Walker(options) {
+        // 下一步移动到哪儿
         this.step = function () {
+            // 目的地
             this.direction = Math.sign(this.target) * this.speed
             this.value += this.direction
             this.target

@@ -252,7 +252,6 @@ const Content = () => {
             <div onClick={switchMusic} className="music-switch">
                 <i className="iconfont icon-yinle"
                    style={{
-                       color: "red",
                        fontSize: "3rem",
                        display: "block",
                        animationName: "rotate-music",

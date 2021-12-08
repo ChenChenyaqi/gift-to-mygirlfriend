@@ -6,6 +6,10 @@ $content-width: 85vw;
   right: 1rem;
   top: 1rem;
   z-index: 999;
+  color: red;
+  :hover{
+    color: #ff4c4a;
+  }
 }
 
 .my-content {

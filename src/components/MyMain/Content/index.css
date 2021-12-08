@@ -3,7 +3,10 @@
   position: absolute;
   right: 1rem;
   top: 1rem;
-  z-index: 999; }
+  z-index: 999;
+  color: red; }
+  .music-switch :hover {
+    color: #ff4c4a; }
 
 .my-content {
   position: relative;

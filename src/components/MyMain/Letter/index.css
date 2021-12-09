@@ -1,0 +1,48 @@
+.start {
+  position: relative;
+  animation: show-letter 2s;
+  animation-fill-mode: forwards; }
+  .start .up-letter img, .start .down-letter img {
+    width: 15rem; }
+  .start .up-letter {
+    top: -5rem;
+    z-index: 1;
+    position: absolute; }
+  .start .letter-wrapper {
+    position: relative; }
+    .start .letter-wrapper .down-letter {
+      position: relative;
+      z-index: 2; }
+    .start .letter-wrapper .letter {
+      position: absolute;
+      z-index: 2;
+      left: 0.25rem;
+      animation: letter-move-up 3s;
+      animation-fill-mode: forwards; }
+      .start .letter-wrapper .letter img {
+        width: 14.5rem;
+        height: 7rem; }
+      .start .letter-wrapper .letter .letter-content {
+        position: relative;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        top: -7rem; }
+        .start .letter-wrapper .letter .letter-content .open-letter {
+          margin-top: 1.6rem; }
+          .start .letter-wrapper .letter .letter-content .open-letter i {
+            color: #ff1b4e;
+            font-size: 1.5rem; }
+
+@keyframes letter-move-up {
+  0% {
+    top: -0rem; }
+  100% {
+    top: -3rem; } }
+@keyframes show-letter {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=index.css.map */

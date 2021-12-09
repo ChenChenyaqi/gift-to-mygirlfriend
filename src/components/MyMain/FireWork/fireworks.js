@@ -12,8 +12,8 @@ export default () => {
 
     // 渲染
     function render() {
-        // 每1/60秒渲染一次， 播放动画
-        setTimeout(render, 1000 / 50)
+        // 每xxx秒渲染一次， 播放动画
+        setTimeout(render, 1000 / 40)
         // 填充颜色
         ctx.save()
         ctx.fillStyle = 'rgba(0,0,0,0.1)';
@@ -48,7 +48,7 @@ export default () => {
         this.speed = Math.random() * 3 + 3;
         this.walker = new Walker({radius: 20, speed: 0.001})
         this.gravity = 0.1
-        this.dur = this.speed / 0.075
+        this.dur = this.speed / 0.065
         this.move = function () {
             this.dur--
             if (this.dur < 0) this.dead = true
@@ -77,7 +77,7 @@ export default () => {
         this.color = randomColor()
 
         this.move = function () {
-            if (this.y > this.height) this.y -= 1;
+            if (this.y > this.height) this.y -= 2;
             else this.burst()
 
         }
@@ -87,24 +87,20 @@ export default () => {
         // 爆炸效果
         this.burst = function () {
             this.dead = true
-            if (Math.random() < 0.05) {
-                let i = 2000;
+            if (Math.random() < 0.025) {
+                let i = 500;
                 while (i--) sparks.push(new Spark(this.x, this.y, randomColor()))
                 return
             }
             if (Math.random() < 0.3) {
-                let i = 500;
+                let i = 100;
                 while (i--) sparks.push(new Spark(this.x, this.y, this.color))
                 return
             }
-            if (Math.random() < 0.5) {
-                let i = 250;
-                while (i--) sparks.push(new Spark(this.x, this.y, this.color))
-                return
+            let i = 50;
+            while (i--) {
+                sparks.push(new Spark(this.x, this.y, this.color))
             }
-
-            let i = 100;
-            while (i--) sparks.push(new Spark(this.x, this.y, this.color))
         }
     }
 

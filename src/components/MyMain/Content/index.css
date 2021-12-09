@@ -1,47 +1,4 @@
 @charset "UTF-8";
-.music-switch {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  z-index: 999;
-  color: red; }
-  .music-switch :hover {
-    color: #ff4c4a; }
-
-.start {
-  position: relative;
-  animation: show-letter 2s;
-  animation-fill-mode: forwards; }
-  .start .up-letter img, .start .down-letter img {
-    width: 15rem; }
-  .start .up-letter {
-    top: -5rem;
-    z-index: 1;
-    position: absolute; }
-  .start .letter-wrapper {
-    position: relative; }
-    .start .letter-wrapper .down-letter {
-      position: relative;
-      z-index: 2; }
-    .start .letter-wrapper .letter {
-      position: absolute;
-      z-index: 2;
-      left: 0.25rem; }
-      .start .letter-wrapper .letter img {
-        width: 14.5rem;
-        height: 7rem; }
-      .start .letter-wrapper .letter .letter-content {
-        position: relative;
-        text-align: center;
-        font-size: 1.2rem;
-        padding-top: 1rem;
-        top: -7rem; }
-        .start .letter-wrapper .letter .letter-content .open-letter {
-          margin-top: 1.6rem; }
-          .start .letter-wrapper .letter .letter-content .open-letter i {
-            color: #ff1b4e;
-            font-size: 1.5rem; }
-
 .my-content {
   position: relative;
   display: flex;
@@ -53,13 +10,13 @@
   overflow: hidden;
   animation: flow-out 1s;
   animation-fill-mode: forwards;
-  /* 圆形 */ }
+  /* 背景与字体颜色 */ }
   .my-content div {
     background-color: #1b1c18;
     color: #ff5bcc; }
   .my-content div:hover {
     color: #afa8ff; }
-  .my-content .banzi {
+  .my-content .board {
     position: absolute;
     z-index: 9;
     width: 85vw;
@@ -80,16 +37,16 @@
   .my-content .down-arrow:hover i {
     color: #afa8ff; }
 
-@keyframes show-content {
+@keyframes flow-out {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes show-board {
   0% {
     left: 0; }
   100% {
     left: 85vw; } }
-@keyframes rotate-music {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
 @keyframes move-arrow {
   0% {
     transform: translateY(0); }
@@ -97,20 +54,5 @@
     transform: translateY(0.5rem); }
   100% {
     transform: translateY(0rem); } }
-@keyframes flow-out {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@keyframes letter-move-up {
-  0% {
-    top: -0rem; }
-  100% {
-    top: -3rem; } }
-@keyframes show-letter {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 /*# sourceMappingURL=index.css.map */

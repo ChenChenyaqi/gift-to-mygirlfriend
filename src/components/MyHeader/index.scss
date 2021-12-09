@@ -1,0 +1,22 @@
+// 音乐播放
+.music-switch {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 999;
+  color: red;
+
+  :hover {
+    color: #ff4c4a;
+  }
+}
+
+// 旋转音乐控制器动画
+@keyframes rotate-music {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}

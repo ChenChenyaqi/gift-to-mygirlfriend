@@ -1,0 +1,81 @@
+// 信封
+.start {
+  position: relative;
+  animation: show-letter 2s;
+  animation-fill-mode: forwards;
+
+  .up-letter img, .down-letter img {
+    width: 15rem;
+  }
+
+  // 上信封
+  .up-letter {
+    top: -5rem;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .letter-wrapper {
+    position: relative;
+
+    // 下信封
+    .down-letter {
+      position: relative;
+      z-index: 2;
+    }
+
+    // 信纸
+    .letter {
+      position: absolute;
+      z-index: 2;
+      left: 0.25rem;
+      animation: letter-move-up 3s;
+      animation-fill-mode: forwards;
+
+      img {
+        width: 14.5rem;
+        height: 7rem;
+      }
+
+      // 信纸中的内容
+      .letter-content {
+        position: relative;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        top: -7rem;
+
+        .open-letter {
+          margin-top: 1.6rem;
+
+          i {
+            color: #ff1b4e;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 信纸移动动画
+@keyframes letter-move-up {
+  0% {
+    top: -0rem;
+  }
+  100% {
+    top: -3rem;
+  }
+}
+
+
+// 显示信封动画
+@keyframes show-letter {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

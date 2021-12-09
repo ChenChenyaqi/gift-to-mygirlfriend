@@ -1,71 +1,6 @@
+// my-content宽、高
 $content-height: 3rem;
 $content-width: 85vw;
-
-// 音乐播放
-.music-switch {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  z-index: 999;
-  color: red;
-
-  :hover {
-    color: #ff4c4a;
-  }
-}
-
-// 信封
-.start {
-  position: relative;
-  animation: show-letter 2s;
-  animation-fill-mode: forwards;
-
-  .up-letter img, .down-letter img {
-    width: 15rem;
-  }
-
-  .up-letter {
-    top: -5rem;
-    z-index: 1;
-    position: absolute;
-  }
-
-  .letter-wrapper {
-    position: relative;
-
-    .down-letter {
-      position: relative;
-      z-index: 2;
-    }
-
-    .letter {
-      position: absolute;
-      z-index: 2;
-      left: 0.25rem;
-
-      img {
-        width: 14.5rem;
-        height: 7rem;
-      }
-
-      .letter-content {
-        position: relative;
-        text-align: center;
-        font-size: 1.2rem;
-        padding-top: 1rem;
-        top: -7rem;
-        .open-letter{
-          margin-top: 1.6rem;
-          i{
-            color: #ff1b4e;
-            font-size: 1.5rem;
-          }
-        }
-      }
-    }
-  }
-
-}
 
 // 主内容区
 .my-content {
@@ -79,7 +14,8 @@ $content-width: 85vw;
   overflow: hidden;
   animation: flow-out 1s;
   animation-fill-mode: forwards;
-  /* 圆形 */
+
+  /* 背景与字体颜色 */
   div {
     background-color: rgb(27, 28, 24);
     color: #ff5bcc;
@@ -90,7 +26,7 @@ $content-width: 85vw;
   }
 
   // 遮板
-  .banzi {
+  .board {
     position: absolute;
     z-index: 9;
     width: $content-width;
@@ -122,8 +58,19 @@ $content-width: 85vw;
   }
 }
 
+// 显示my-content动画
+@keyframes flow-out {
+  0% {
+    opacity: 0;
+  }
 
-@keyframes show-content {
+  100% {
+    opacity: 1;
+  }
+}
+
+// 展示遮板动画
+@keyframes show-board {
   0% {
     left: 0
   }
@@ -132,15 +79,7 @@ $content-width: 85vw;
   }
 }
 
-@keyframes rotate-music {
-  0% {
-    transform: rotate(0deg)
-  }
-  100% {
-    transform: rotate(360deg)
-  }
-}
-
+// 翻页键动画
 @keyframes move-arrow {
   0% {
     transform: translateY(0);
@@ -154,31 +93,4 @@ $content-width: 85vw;
   }
 }
 
-@keyframes flow-out {
-  0% {
-    opacity: 0;
-  }
 
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes letter-move-up {
-  0% {
-    top: -0rem;
-  }
-  100% {
-    top: -3rem;
-  }
-}
-
-@keyframes show-letter {
-  0%{
-    opacity: 0;
-  }
-
-  100%{
-    opacity: 1;
-  }
-}

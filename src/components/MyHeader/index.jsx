@@ -70,7 +70,7 @@ const MyHeader = (props) => {
             <div onClick={switchMusic} className="music-switch">
                 <i className="iconfont icon-yinle"
                    style={{
-                       fontSize: "3rem",
+                       fontSize: "2rem",
                        display: "block",
                        animationName: "rotate-music",
                        animationDuration: `${rotateMusic ? "10s" : ""}`,

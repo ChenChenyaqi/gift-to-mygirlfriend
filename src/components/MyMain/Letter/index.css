@@ -25,14 +25,15 @@
       .start .letter-wrapper .letter .letter-content {
         position: relative;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        font-family: myfont;
         padding-top: 1rem;
         top: -7rem; }
         .start .letter-wrapper .letter .letter-content .open-letter {
-          margin-top: 1.6rem; }
+          margin-top: 1rem; }
           .start .letter-wrapper .letter .letter-content .open-letter i {
             color: #ff1b4e;
-            font-size: 1.5rem; }
+            font-size: 1.8rem; }
 
 @keyframes letter-move-up {
   0% {

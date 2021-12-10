@@ -1,3 +1,4 @@
+
 // 信封
 .start {
   position: relative;
@@ -41,16 +42,17 @@
       .letter-content {
         position: relative;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        font-family: myfont;
         padding-top: 1rem;
         top: -7rem;
 
         .open-letter {
-          margin-top: 1.6rem;
+          margin-top: 1rem;
 
           i {
             color: #ff1b4e;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
           }
         }
       }

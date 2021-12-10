@@ -1,10 +1,16 @@
 import React from 'react';
-import "./fireworks.css"
+import "./fireworks.css";
+import fireworks from "./fireworks";
 
 const FireWork = (props) => {
+
+   if(props.firework){
+       fireworks()
+   }
+
     return (
         // 烟花
-        <div>
+        <div >
             {
                 props.showFireWork === "show" ?
                     <canvas width={document.documentElement.clientWidth}

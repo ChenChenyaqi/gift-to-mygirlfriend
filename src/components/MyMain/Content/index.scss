@@ -1,14 +1,14 @@
 
 // my-content宽、高
 $content-height: 3rem;
-$content-width: 28rem;
+$content-width: 30rem;
 
 // 主内容区
 .my-content {
   position: relative;
   display: flex;
   flex-direction: column;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-family: myfont;
   line-height: $content-height;
   text-align: center;

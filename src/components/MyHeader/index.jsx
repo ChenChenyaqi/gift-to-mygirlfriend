@@ -11,6 +11,8 @@ const musicList = [
 const musicVolume = 0.8
 // 音乐速度
 const musicSpeed = 1
+// 音乐列表索引
+let musicIndex = 0
 
 const MyHeader = (props) => {
 
@@ -37,23 +39,16 @@ const MyHeader = (props) => {
         // 把switchMusic作为参数传递给Content组件里，以便调用
         props.switchMusic(switchMusic)
 
-        // 音乐列表索引
-        sessionStorage.setItem("musicIndex", "0")
-
         // 监测一首歌是否播放完毕
         let time = setInterval(() => {
             let music = document.getElementById("music");
             if (music.currentTime >= music.duration) {
-                // 获取索引
-                let i = parseInt(sessionStorage.getItem("musicIndex"))
                 // 如果索引到头，从头开始
-                i++
-                if (i === musicList.length) {
-                    i = 0
+                musicIndex++
+                if (musicIndex === musicList.length) {
+                    musicIndex = 0
                 }
-                music.src = musicList[i];
-                // 更新索引
-                sessionStorage.setItem("musicIndex", i + "")
+                music.src = musicList[musicIndex];
                 music.play()
                 music.volume = musicVolume
                 music.playbackRate = musicSpeed

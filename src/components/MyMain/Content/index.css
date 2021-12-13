@@ -8,7 +8,7 @@
   line-height: 3rem;
   text-align: center;
   width: 30rem;
-  animation: flow-out 1s;
+  animation: flow-out 2s;
   animation-fill-mode: forwards;
   /* 背景与字体颜色 */ }
   .my-content .zimeigui {
@@ -58,7 +58,9 @@
     position: relative;
     align-self: center;
     width: 2rem;
-    background-color: rgba(207, 193, 255, 0); }
+    background-color: rgba(207, 193, 255, 0);
+    animation: delay-show 1s;
+    animation-fill-mode: forwards; }
     .my-content .down-arrow i {
       color: #9b6cff;
       font-size: 1.5rem;
@@ -86,5 +88,10 @@
     transform: translateY(0.5rem); }
   100% {
     transform: translateY(0rem); } }
+@keyframes delay-show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=index.css.map */

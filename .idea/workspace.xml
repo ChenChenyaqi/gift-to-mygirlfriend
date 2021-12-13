@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b6305f8-219a-410f-b613-903c5d920866" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/MyMain/Content/content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyHeader/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyHeader/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +28,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/MyMain/Content" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -121,7 +125,9 @@
       <workItem from="1639038545929" duration="869000" />
       <workItem from="1639043418286" duration="9973000" />
       <workItem from="1639100741405" duration="1198000" />
-      <workItem from="1639108894544" duration="15157000" />
+      <workItem from="1639108894544" duration="15177000" />
+      <workItem from="1639382424605" duration="103000" />
+      <workItem from="1639384937485" duration="3213000" />
     </task>
     <task id="LOCAL-00001" summary="初始化...">
       <created>1638431818176</created>
@@ -235,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639124571996</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="版本1.3 完善信封样式、字体、修改了字体大小">
+      <created>1639125615614</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1639125615614</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +281,7 @@
     <MESSAGE value="版本1.1 组件化" />
     <MESSAGE value="版本1.2 信封颜色" />
     <MESSAGE value="版本1.3 完善信封样式、字体" />
-    <option name="LAST_COMMIT_MESSAGE" value="版本1.3 完善信封样式、字体" />
+    <MESSAGE value="版本1.3 完善信封样式、字体、修改了字体大小" />
+    <option name="LAST_COMMIT_MESSAGE" value="版本1.3 完善信封样式、字体、修改了字体大小" />
   </component>
 </project>

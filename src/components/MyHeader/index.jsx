@@ -68,7 +68,8 @@ const MyHeader = (props) => {
                        fontSize: "2rem",
                        display: "block",
                        animationName: "rotate-music",
-                       animationDuration: `${rotateMusic ? "10s" : ""}`,
+                       animationDuration: "10s",
+                       animationPlayState: `${!rotateMusic ? "paused": "running" }`,
                        animationIterationCount: "infinite",
                        animationTimingFunction: "linear",
                    }}

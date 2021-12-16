@@ -29,12 +29,12 @@ const Letter = (props) => {
         <div onClick={start} className="start" style={{display: showLetter}}>
             {/*上信封*/}
             <div className="up-letter">
-                <img src={upLetterPath} alt="信封"/>
+                <img draggable={false} src={upLetterPath} alt="信封"/>
             </div>
             <div className="letter-wrapper">
                 <div className="letter">
                     {/*信纸*/}
-                    <img src={letterPath} alt="信纸"/>
+                    <img draggable={false} src={letterPath} alt="信纸"/>
                     <div className="letter-content">
                         <span>赠予我的小宝贝</span>
                         {/*小心心*/}
@@ -45,7 +45,7 @@ const Letter = (props) => {
                 </div>
                 {/*下信封*/}
                 <div className="down-letter">
-                    <img src={downLetterPath} alt="信封"/>
+                    <img draggable={false} src={downLetterPath} alt="信封"/>
                 </div>
             </div>
         </div>

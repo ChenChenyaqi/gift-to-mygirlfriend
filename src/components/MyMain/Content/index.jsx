@@ -116,15 +116,15 @@ const Content = () => {
                 </div>
 
                 {/*玫瑰花和桃花*/}
-                <img src={zimeiguiPath} className="zimeigui" alt="玫瑰花"/>
-                <img src={taohuaPath} className="taohua" alt="桃花"/>
+                <img draggable={false} src={zimeiguiPath} className="zimeigui" alt="玫瑰花"/>
+                <img draggable={false} src={taohuaPath} className="taohua" alt="桃花"/>
 
                 {/*花瓣*/}
                 {
                     content ? content.map((item, index) => {
                         const huabans = [huaba1Path, huaba2Path, huaba3Path]
                         const i = Math.floor(Math.random() * 3)
-                        return <img key={index} src={huabans[i]} className="huaban" alt="花瓣" style={{
+                        return <img draggable={false} key={index} src={huabans[i]} className="huaban" alt="花瓣" style={{
                             left: Math.random() * 90 + "%",
                             top: Math.random() * 60 + "%",
                             width: i === 0 ? 0.8 + "rem" : i + "rem",
@@ -133,7 +133,7 @@ const Content = () => {
                 }
 
                 {/*猫*/}
-                <img src={catPath} className="cat" alt="猫"/>
+                <img draggable={false} src={catPath} className="cat" alt="猫"/>
 
             </div>
 

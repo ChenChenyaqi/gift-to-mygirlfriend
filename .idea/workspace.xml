@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b6305f8-219a-410f-b613-903c5d920866" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/MyMain/Content/content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyHeader/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyHeader/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Letter/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Letter/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +127,8 @@
       <workItem from="1639100741405" duration="1198000" />
       <workItem from="1639108894544" duration="15177000" />
       <workItem from="1639382424605" duration="103000" />
-      <workItem from="1639384937485" duration="3213000" />
+      <workItem from="1639384937485" duration="3274000" />
+      <workItem from="1639652940944" duration="2141000" />
     </task>
     <task id="LOCAL-00001" summary="初始化...">
       <created>1638431818176</created>
@@ -248,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639125615614</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="版本1.4 完善...">
+      <created>1639388179454</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1639388179455</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +290,7 @@
     <MESSAGE value="版本1.2 信封颜色" />
     <MESSAGE value="版本1.3 完善信封样式、字体" />
     <MESSAGE value="版本1.3 完善信封样式、字体、修改了字体大小" />
-    <option name="LAST_COMMIT_MESSAGE" value="版本1.3 完善信封样式、字体、修改了字体大小" />
+    <MESSAGE value="版本1.4 完善..." />
+    <option name="LAST_COMMIT_MESSAGE" value="版本1.4 完善..." />
   </component>
 </project>

@@ -7,7 +7,6 @@ const MyMain = () => {
 
     const star = Array.from({length: 200}, () => 1)
 
-
     return (
         <div className="my-main">
             <Content/>

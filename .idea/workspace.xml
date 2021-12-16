@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="9b6305f8-219a-410f-b613-903c5d920866" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyHeader/.sass-cache/d3cbc86e7157c844ecf36ba5bc51bb79a524f038/index.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyHeader/.sass-cache/d3cbc86e7157c844ecf36ba5bc51bb79a524f038/index.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyHeader/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyHeader/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyHeader/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyHeader/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyHeader/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyHeader/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Letter/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Letter/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyHeader/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyHeader/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyMain/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +129,7 @@
       <workItem from="1639108894544" duration="15177000" />
       <workItem from="1639382424605" duration="103000" />
       <workItem from="1639384937485" duration="3274000" />
-      <workItem from="1639652940944" duration="2141000" />
+      <workItem from="1639652940944" duration="3453000" />
     </task>
     <task id="LOCAL-00001" summary="初始化...">
       <created>1638431818176</created>
@@ -256,11 +257,28 @@
       <option name="project" value="LOCAL" />
       <updated>1639388179455</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="版本1.4 完善音乐播放暂停功能，改善pc端体验">
+      <created>1639658328886</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1639658328886</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -291,6 +309,7 @@
     <MESSAGE value="版本1.3 完善信封样式、字体" />
     <MESSAGE value="版本1.3 完善信封样式、字体、修改了字体大小" />
     <MESSAGE value="版本1.4 完善..." />
-    <option name="LAST_COMMIT_MESSAGE" value="版本1.4 完善..." />
+    <MESSAGE value="版本1.4 完善音乐播放暂停功能，改善pc端体验" />
+    <option name="LAST_COMMIT_MESSAGE" value="版本1.4 完善音乐播放暂停功能，改善pc端体验" />
   </component>
 </project>

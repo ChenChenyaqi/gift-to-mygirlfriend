@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b6305f8-219a-410f-b613-903c5d920866" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9b6305f8-219a-410f-b613-903c5d920866" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,19 +31,19 @@
     <property name="settings.editor.selected.configurable" value="settings.gitee" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Code\webstorm\gift\src\components\MyMain\Content" />
-      <recent name="E:\Code\webstorm\gift\src\components\MyMain\Content\flowers" />
-      <recent name="E:\Code\webstorm\gift\src\components\MyMain\Letter" />
-      <recent name="E:\Code\webstorm\gift\src\components\MyMain\Content\letter-imgs" />
-      <recent name="E:\Code\webstorm\gift\public\bgm" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Code\webstorm\gift" />
       <recent name="E:\Code\webstorm\gift\src" />
       <recent name="E:\Code\webstorm\gift\src\components\MyMain\Content" />
       <recent name="E:\Code\webstorm\gift\src\components\MyMain\Content\flowers" />
       <recent name="E:\Code\webstorm\gift\src\components\MyMain\FireWork" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Code\webstorm\gift" />
+      <recent name="E:\Code\webstorm\gift\src\components\MyMain\Content" />
+      <recent name="E:\Code\webstorm\gift\src\components\MyMain\Content\flowers" />
       <recent name="E:\Code\webstorm\gift\src\components\MyMain\Letter" />
+      <recent name="E:\Code\webstorm\gift\src\components\MyMain\Content\letter-imgs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -127,7 +125,7 @@
       <workItem from="1639836291617" duration="52000" />
       <workItem from="1639837093367" duration="384000" />
       <workItem from="1639885995164" duration="4885000" />
-      <workItem from="1639891482458" duration="999000" />
+      <workItem from="1639891482458" duration="1360000" />
     </task>
     <task id="LOCAL-00001" summary="初始化...">
       <created>1638431818176</created>
@@ -283,7 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639891885692</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="readme">
+      <created>1639892567563</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1639892567563</updated>
+    </task>
+    <task id="LOCAL-00024" summary="readme">
+      <created>1639892711172</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1639892711172</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -23,6 +23,21 @@
     .down-letter {
       position: relative;
       z-index: 2;
+      .open{
+        position: absolute;
+        top:4rem;
+        left: 6.8rem;
+        animation: open-arrow 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        i{
+          font-size: 1.2rem;
+          color: #a7a5ed;
+        }
+        i:hover{
+          color: #b5b2ff;
+        }
+      }
     }
 
     // 信纸
@@ -30,8 +45,6 @@
       position: absolute;
       z-index: 2;
       left: 0.25rem;
-      animation: letter-move-up 3s;
-      animation-fill-mode: forwards;
 
       img {
         width: 14.5rem;
@@ -45,7 +58,7 @@
         font-size: 1.5rem;
         font-family: myfont;
         padding-top: 1rem;
-        top: -7rem;
+        top: -7.4rem;
 
         .open-letter {
           margin-top: 1rem;
@@ -70,6 +83,24 @@
   }
 }
 
+// 信封变淡
+@keyframes letter-hidden {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  90%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
 
 // 显示信封动画
 @keyframes show-letter {
@@ -81,3 +112,19 @@
     opacity: 1;
   }
 }
+
+// open键动画
+@keyframes open-arrow {
+  0%{
+    transform: translateY(0rem);
+  }
+
+  50%{
+    transform: translateY(-0.3rem);
+  }
+
+  100%{
+    transform: translateY(0rem);
+  }
+}
+

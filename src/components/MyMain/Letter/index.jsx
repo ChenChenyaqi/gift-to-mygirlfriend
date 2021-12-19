@@ -8,13 +8,20 @@ const Letter = (props) => {
 
     // 是否显示信封
     const [showLetter, setShowLetter] = React.useState("none")
+    // 信纸向右上移动的动画
+    const [moveLetter, setMoveLetter] = React.useState(false)
 
     // 点击信封，开始
-    const start = () => {
-        // 显示信封
-        setShowLetter("none")
-        // 调用总开关
-        props.start()
+    const start = (e) => {
+        e.target.style.display = "none"
+        // 让信纸向右上移动
+        setMoveLetter(true)
+        setTimeout(() => {
+            // 显示信封
+            setShowLetter("none")
+            // 调用总开关
+            props.start()
+        }, 3500)
     }
 
     React.useEffect(() => {
@@ -26,14 +33,20 @@ const Letter = (props) => {
 
     return (
         // 信封
-        <div onClick={start} className="start" style={{display: showLetter}}>
+        <div className="start" style={{display: showLetter}}>
             {/*上信封*/}
-            <div className="up-letter">
+            <div className="up-letter" style={{
+                animation: moveLetter ? "letter-hidden 3s" : "",
+                animationFillMode: moveLetter ? "forwards" : "",
+            }}>
                 <img draggable={false} src={upLetterPath} alt="信封"/>
             </div>
             <div className="letter-wrapper">
-                <div className="letter">
-                    {/*信纸*/}
+                {/*信纸*/}
+                <div className="letter" style={{
+                    animation: moveLetter ? "letter-move-up 3s" : "",
+                    animationFillMode: moveLetter ? "forwards" : "",
+                }}>
                     <img draggable={false} src={letterPath} alt="信纸"/>
                     <div className="letter-content">
                         <span>赠予我的小宝贝</span>
@@ -44,8 +57,15 @@ const Letter = (props) => {
                     </div>
                 </div>
                 {/*下信封*/}
-                <div className="down-letter">
+                <div className="down-letter" style={{
+                    animation: moveLetter ? "letter-hidden 3s" : "",
+                    animationFillMode: moveLetter ? "forwards" : "",
+                }}>
                     <img draggable={false} src={downLetterPath} alt="信封"/>
+                    {/*打开信封按钮*/}
+                    <div className="open" onClick={start}>
+                        <i className="iconfont icon-Open"/>
+                    </div>
                 </div>
             </div>
         </div>

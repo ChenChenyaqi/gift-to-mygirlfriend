@@ -63,7 +63,7 @@ const MyHeader = (props) => {
         <Fragment>
             {/*音乐控制器*/}
             <div onClick={switchMusic} className="music-switch">
-                <i className="iconfont icon-yinle1"
+                <i className="iconfont icon-yinle"
                    style={{
                        fontSize: "2rem",
                        display: "block",

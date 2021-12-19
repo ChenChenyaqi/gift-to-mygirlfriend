@@ -3,5 +3,5 @@
 找到src/components/MyMain/Content/content.js文件里，
 修改里面allContent数组的内容即可。
 
-<img src="../../../Java/Java_IDEA/DataStructures/NumericalCalculation/img/20211219_133913-1639892530069.gif" alt="20211219_133913"  />
+<img src="./20211219_133913.gif" alt="20211219_133913"  />
 

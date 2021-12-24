@@ -1,4 +1,7 @@
 @charset "UTF-8";
+::-webkit-scrollbar {
+  width: 0 !important; }
+
 .my-content {
   position: relative;
   display: flex;

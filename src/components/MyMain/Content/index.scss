@@ -2,6 +2,10 @@
 $content-height: 3rem;
 $content-width: 30rem;
 
+::-webkit-scrollbar{
+  width: 0!important;
+}
+
 // 主内容区
 .my-content {
   position: relative;

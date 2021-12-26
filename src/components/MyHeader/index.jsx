@@ -7,6 +7,12 @@ const musicList = [
     "/bgm/花粥 - 纸短情长.mp3"
 ]
 
+// 预加载音乐资源
+const musicSrc = [new Audio(musicList[0]), new Audio(musicList[1])]
+for (let i = 0; i < musicSrc.length; i++) {
+    musicSrc[i].load()
+}
+
 // 音乐音量
 const musicVolume = 0.8
 // 音乐速度
@@ -21,18 +27,17 @@ const MyHeader = (props) => {
 
     // 播放/暂停音乐
     const switchMusic = () => {
-        let music = document.getElementById("music");
         // 暂停音乐
         if (rotateMusic) {
             setRotateMusic(false)
-            music.pause()
+            musicSrc[musicIndex].pause()
             return
         }
         // 播放音乐
         setRotateMusic(true)
-        music.play()
-        music.volume = musicVolume
-        music.playbackRate = musicSpeed
+        musicSrc[musicIndex].play()
+        musicSrc[musicIndex].volume = musicVolume
+        musicSrc[musicIndex].playbackRate = musicSpeed
     }
 
     React.useEffect(() => {
@@ -41,17 +46,15 @@ const MyHeader = (props) => {
 
         // 监测一首歌是否播放完毕
         let time = setInterval(() => {
-            let music = document.getElementById("music");
-            if (music.currentTime >= music.duration) {
+            if (musicSrc[musicIndex].currentTime >= musicSrc[musicIndex].duration) {
                 // 如果索引到头，从头开始
                 musicIndex++
                 if (musicIndex === musicList.length) {
                     musicIndex = 0
                 }
-                music.src = musicList[musicIndex];
-                music.play()
-                music.volume = musicVolume
-                music.playbackRate = musicSpeed
+                musicSrc[musicIndex].play()
+                musicSrc[musicIndex].volume = musicVolume
+                musicSrc[musicIndex].playbackRate = musicSpeed
             }
         }, 1000)
         return () => {

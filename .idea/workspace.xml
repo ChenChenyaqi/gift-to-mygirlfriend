@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b6305f8-219a-410f-b613-903c5d920866" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/.sass-cache/518cb4dfa2a6784afd328f14c2b02158c9c332e9/index.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyMain/Content/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyMain/Content/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyHeader/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyHeader/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,6 +133,10 @@
       <workItem from="1640165248741" duration="967000" />
       <workItem from="1640330415552" duration="1641000" />
       <workItem from="1640335181329" duration="1467000" />
+      <workItem from="1640338208844" duration="242000" />
+      <workItem from="1640354810618" duration="354000" />
+      <workItem from="1640399208513" duration="635000" />
+      <workItem from="1640481459434" duration="1707000" />
     </task>
     <task id="LOCAL-00001" summary="初始化...">
       <created>1638431818176</created>
@@ -313,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639892949092</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="修改了一些东东">
+      <created>1640338243379</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1640338243379</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,6 +369,7 @@
     <MESSAGE value="版本1.5 更改音乐图标" />
     <MESSAGE value="版本1.6 增加点击信封动画" />
     <MESSAGE value="readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+    <MESSAGE value="修改了一些东东" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了一些东东" />
   </component>
 </project>

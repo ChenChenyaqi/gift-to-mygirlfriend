@@ -4,6 +4,7 @@
     <list default="true" id="9b6305f8-219a-410f-b613-903c5d920866" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyHeader/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyHeader/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/蝴蝶夫人.ttf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +137,8 @@
       <workItem from="1640338208844" duration="242000" />
       <workItem from="1640354810618" duration="354000" />
       <workItem from="1640399208513" duration="635000" />
-      <workItem from="1640481459434" duration="1707000" />
+      <workItem from="1640481459434" duration="1985000" />
+      <workItem from="1640483824508" duration="829000" />
     </task>
     <task id="LOCAL-00001" summary="初始化...">
       <created>1638431818176</created>
@@ -320,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640338243379</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="预加载音乐资源">
+      <created>1640483187881</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1640483187882</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,6 +379,7 @@
     <MESSAGE value="版本1.6 增加点击信封动画" />
     <MESSAGE value="readme" />
     <MESSAGE value="修改了一些东东" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了一些东东" />
+    <MESSAGE value="预加载音乐资源" />
+    <option name="LAST_COMMIT_MESSAGE" value="预加载音乐资源" />
   </component>
 </project>

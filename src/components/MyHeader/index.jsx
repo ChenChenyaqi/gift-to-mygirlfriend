@@ -9,9 +9,11 @@ const musicList = [
 
 // 预加载音乐资源
 const musicSrc = [new Audio(musicList[0]), new Audio(musicList[1])]
-for (let i = 0; i < musicSrc.length; i++) {
-    musicSrc[i].load()
-}
+setTimeout(()=>{
+    for (let i = 0; i < musicSrc.length; i++) {
+        musicSrc[i].load()
+    }
+}, 1000)
 
 // 音乐音量
 const musicVolume = 0.8
@@ -72,7 +74,7 @@ const MyHeader = (props) => {
                        display: "block",
                        animationName: "rotate-music",
                        animationDuration: "10s",
-                       animationPlayState: `${!rotateMusic ? "paused": "running" }`,
+                       animationPlayState: `${!rotateMusic ? "paused" : "running"}`,
                        animationIterationCount: "infinite",
                        animationTimingFunction: "linear",
                    }}
